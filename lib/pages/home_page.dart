@@ -41,6 +41,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void generateWord() {
+    if (correctWordNotifier.value.isNotEmpty) return;
     List<String> words = [
       wordGenerator.nounsByLength(5)[Random().nextInt(
         wordGenerator.nounsByLength(5).length,

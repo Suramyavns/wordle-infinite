@@ -18,4 +18,5 @@ void resetGame() {
   wordGuessesNotifier.value = [];
   currentRowNotifier.value = 0;
   guessStatesNotifier.value = [];
+  correctWordNotifier.value = '';
 }
