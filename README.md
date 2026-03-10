@@ -1,6 +1,6 @@
 # Wordle Infinite 🧩
 
-![Wordle Hero](wordle_app_hero.png)
+![Wordle](assets/images/wordle-ad.jpg)
 
 A premium, modern Wordle clone built with **Flutter**, **Firebase**, and **Material 3**. Play the world's favorite word game infinitely with real-time stats and cloud sync.
 
