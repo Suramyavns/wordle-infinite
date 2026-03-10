@@ -26,7 +26,7 @@ You can download the latest release build for Android directly from the link bel
 
 1. **Clone the Repo**:
    ```bash
-   git clone https://github.com/yourusername/wordle.git
+   git clone https://github.com/Suramyavns/wordle.git
    ```
 2. **Setup Firebase**:
    Configure your Firebase project and add `google-services.json`.
