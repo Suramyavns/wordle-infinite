@@ -28,11 +28,12 @@ class _InputFieldsWidgetState extends State<InputFieldsWidget> {
   }
 
   void _onGuessChanged() {
-    if (currentWordGuessNotifier.value.length >= 5) {
+    if (currentWordGuessNotifier.value.length >= 5 &&
+        correctWordNotifier.value != null) {
       final submittedWord = currentWordGuessNotifier.value;
 
       // Evaluate letter states against the correct word
-      final correctWord = correctWordNotifier.value.toLowerCase();
+      final correctWord = correctWordNotifier.value!.toLowerCase();
       final guess = submittedWord.toLowerCase();
       final states = List<LetterState>.filled(5, LetterState.absent);
 
