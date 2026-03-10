@@ -20,7 +20,7 @@ A premium, modern Wordle clone built with **Flutter**, **Firebase**, and **Mater
 ### Direct Download
 You can download the latest release build for Android directly from the link below:
 
-👉 **[Download Wordle APK](build/app/outputs/flutter-apk/app-release.apk)**
+👉 **[Download Infinite Wordle APK](https://github.com/Suramyavns/wordle/releases/download/android/wordle-infinite.apk)**
 
 ### Build from Source
 
