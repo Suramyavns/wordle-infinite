@@ -116,7 +116,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
     return ElevatedButton(
       onPressed: isLoading ? null : handleLogOut,
       style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.red.shade700,
+        backgroundColor: Colors.red,
         foregroundColor: Colors.red,
         elevation: 0,
         minimumSize: const Size(double.infinity, 54),
@@ -134,7 +134,13 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                 color: Colors.white,
               ),
             )
-          : const Text('Logout', style: TextStyle(fontWeight: FontWeight.bold)),
+          : const Text(
+              'Logout',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
     );
   }
 }
