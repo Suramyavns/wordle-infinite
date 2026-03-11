@@ -74,7 +74,7 @@ class _WordleKeyboardWidgetState extends State<WordleKeyboardWidget> {
                                 .elementAt(index);
                             final LetterState state =
                                 letterStateMap[keyLetter] ?? LetterState.none;
-                            final Color keyColor = colorForState(state);
+                            final Color keyColor = colorForState(state, true);
                             double boxWidth =
                                 MediaQuery.of(context).size.width /
                                 firstKeyboardLine.length;
@@ -101,7 +101,7 @@ class _WordleKeyboardWidgetState extends State<WordleKeyboardWidget> {
                                       shadowColor: Colors.transparent,
                                       color: Colors.transparent,
                                       child: Text(
-                                        keyLetter,
+                                        keyLetter.toUpperCase(),
                                         style: WTextStyle.keyBoardTextStyle,
                                       ),
                                     ),

@@ -47,6 +47,7 @@ dependencies:
   flutter_randomcolor: ^1.0.18
   flutter_onscreen_keyboard: ^0.4.4
   word_generator: ^0.6.0
+  dicto: ^0.1.0
 
 dev_dependencies:
   flutter_test:

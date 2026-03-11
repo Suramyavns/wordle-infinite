@@ -8,6 +8,7 @@ final ValueNotifier<String> currentWordGuessNotifier = ValueNotifier('');
 final ValueNotifier<List<String>> wordGuessesNotifier = ValueNotifier([]);
 final ValueNotifier<int> currentRowNotifier = ValueNotifier(0);
 final ValueNotifier<String?> correctWordNotifier = ValueNotifier(null);
+final ValueNotifier<bool> isValidWordNotifier = ValueNotifier(false);
 
 /// One inner list per submitted row, each with 5 [LetterState] values.
 final ValueNotifier<List<List<LetterState>>> guessStatesNotifier =

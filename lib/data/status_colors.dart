@@ -1,7 +1,7 @@
 import 'package:Wordle/data/notifiers.dart';
 import 'package:flutter/material.dart';
 
-Color colorForState(LetterState state) {
+Color colorForState(LetterState state, bool isKeyboard) {
   switch (state) {
     case LetterState.correct:
       return Colors.green.shade600;
@@ -10,6 +10,6 @@ Color colorForState(LetterState state) {
     case LetterState.absent:
       return Colors.grey.shade700;
     case LetterState.none:
-      return Colors.transparent;
+      return isKeyboard ? Colors.grey : Colors.transparent;
   }
 }

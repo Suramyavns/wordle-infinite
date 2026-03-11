@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:Wordle/data/notifiers.dart';
+import 'package:dicto/dicto.dart';
 import 'package:word_generator/word_generator.dart';
 
 final wordGenerator = WordGenerator();
@@ -17,4 +18,9 @@ void generateWord() {
   ];
   final word = words[Random().nextInt(words.length)];
   correctWordNotifier.value = word;
+}
+
+bool isValidWord(String word) {
+  final response = Dicto.get(word);
+  return response.isNotEmpty;
 }

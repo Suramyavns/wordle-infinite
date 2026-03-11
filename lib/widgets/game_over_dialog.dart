@@ -21,7 +21,7 @@ class _GameOverDialogState extends State<GameOverDialog> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           if (widget.isWin) ...[
-            Text('You guessed the word in $widget.tries tries.'),
+            Text('You guessed the word in ${widget.tries} tries.'),
           ] else ...[
             Text('Better luck next time!'),
             SizedBox(height: 8),

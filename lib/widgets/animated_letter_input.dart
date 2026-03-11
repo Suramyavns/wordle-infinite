@@ -37,7 +37,7 @@ class _AnimatedLetterInputState extends State<AnimatedLetterInput> {
           state = allStates[widget.rowIndex][widget.colIndex];
         }
 
-        final Color tileColor = colorForState(state);
+        final Color tileColor = colorForState(state, false);
 
         return AnimatedContainer(
           duration: Duration(milliseconds: 400),

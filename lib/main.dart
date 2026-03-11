@@ -5,6 +5,7 @@ import 'package:Wordle/pages/home_page.dart';
 import 'package:Wordle/pages/welcome_page.dart';
 import 'package:Wordle/utils/auth_service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:dicto/dicto.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -30,6 +31,8 @@ Future<void> main() async {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]);
+
+  await Dicto.initialize(localesToInitialize: ['en']);
 
   runApp(const MyApp());
 }
