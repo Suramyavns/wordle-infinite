@@ -131,7 +131,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
               width: 20,
               child: CircularProgressIndicator(
                 strokeWidth: 2,
-                color: Colors.red,
+                color: Colors.white,
               ),
             )
           : const Text('Logout', style: TextStyle(fontWeight: FontWeight.bold)),
